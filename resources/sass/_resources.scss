@@ -1,0 +1,23 @@
+// fonts
+$lora: 'Lora',
+serif;
+$poppins: 'Poppins',
+sans-serif;
+
+// colors
+$black: #140505;
+$black-60: #302F2F;
+$black-40: #5A5757;
+$black-10: rgba($black, .1);
+$white: #FEFEFE;
+$cream: #DDB59C;
+$yellow: #F3A21F;
+$orange: #D86A28;
+$red: #C22A2F;
+$blue: #003E65;
+
+@mixin with-left-title {
+    min-height: calc(100vh - 6rem);
+    padding-left: 72px;
+    position: relative;
+}

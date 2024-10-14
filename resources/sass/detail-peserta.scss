@@ -1,0 +1,60 @@
+.detail {
+    @include with-left-title();
+
+    display: flex;
+    gap: 2.5rem;
+
+    &__image {
+        max-width: 50%;
+        height: fit-content;
+        max-height: calc(100vh - 10rem);
+        border-radius: 25px;
+
+    }
+
+    &__right {
+        height: calc(100vh - 10rem);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__keterangan {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+
+        &--data {
+            display: flex;
+            flex-direction: column;
+            gap: 1.125rem;
+
+            h4 {
+                font-weight: 400;
+                color: $black-60;
+            }
+        }
+
+        &--isian {
+            display: flex;
+            flex-direction: column;
+            gap: 1.125rem;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__delete {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        color: $red;
+        text-decoration: underline;
+    }
+}

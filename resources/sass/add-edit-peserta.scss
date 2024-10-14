@@ -1,0 +1,32 @@
+.add-edit-peserta {
+    @include with-left-title;
+
+    >form {
+        min-height: calc(100vh - 6rem);
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__top {
+        width: 100%;
+        padding-top: 2rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: stretch;
+        gap: 4rem;
+    }
+
+    &__side {
+        width: calc((100% - 2rem)/2);
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+}

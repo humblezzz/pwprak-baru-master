@@ -1,0 +1,208 @@
+.landing {
+    margin-top: 0;
+
+    &--top {
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__content {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &--about {
+        width: 100%;
+        margin-top: 4rem;
+        margin-bottom: 6rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &__content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        &__title {
+            color: $red;
+        }
+
+        &__mahavira {
+            height: 62px;
+        }
+
+        &__desc {
+            text-align: justify;
+        }
+    }
+
+    &--guidebook {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        gap: 2rem;
+
+        &__left {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        &__book {
+            width: 60%;
+            padding: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            background-color: $white;
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(4px);
+            border-radius: 12px;
+
+            >img {
+                width: 100%;
+            }
+        }
+
+        &__title {
+            color: $red;
+            white-space: nowrap;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            align-self: flex-end;
+            justify-content: flex-end;
+        }
+
+        &__text {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 8px;
+
+            >p {
+                margin-bottom: 4px;
+                text-align: end;
+            }
+        }
+    }
+
+    &--footer {
+        padding: 200px 0 50px 0;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        &__left {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 100px;
+        }
+
+        &__menu-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 24px;
+        }
+
+        &__title {
+            color: $red;
+            white-space: nowrap;
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 4px;
+        }
+
+        &__link {
+            color: $black;
+            text-decoration: underline;
+        }
+
+        &__right {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 100px;
+        }
+
+        &__img {
+            height: 150px;
+        }
+    }
+
+    &__ornament {
+        position: absolute;
+        filter: blur(8px);
+        opacity: .6;
+
+        &--by {
+            bottom: 3rem;
+            opacity: 1;
+            filter: blur(0);
+        }
+
+        &--mahavira {
+            width: 30%;
+            top: 3rem;
+            left: 0;
+        }
+
+        &--mahavira2 {
+            width: 10%;
+            bottom: 2rem;
+            left: 0;
+        }
+
+        &--logo {
+            transform: rotate(-90deg);
+            width: 80vh;
+            left: 90%;
+        }
+
+        &--about {
+            transform: rotate(-90deg) translate(-50%, 250%);
+            top: 4rem;
+            right: 0;
+        }
+
+        &--guidebook {
+            z-index: -1;
+            top: 30%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

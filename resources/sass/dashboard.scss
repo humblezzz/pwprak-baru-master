@@ -1,0 +1,81 @@
+.ornament {
+    width: calc(100vh - 6rem);
+    position: fixed;
+    left: 0;
+    transform: rotate(-90deg) translate(-90%, 100%);
+    transform-origin: 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    gap: 16px;
+
+    &__text {
+        color: $red;
+        white-space: nowrap;
+    }
+
+    &__line {
+        width: 100%;
+        border: 1.5px solid $red;
+        border-radius: 1.5px;
+        background-color: $red;
+    }
+}
+
+.dashboard {
+    @include with-left-title();
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 64px;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        >h2 {
+            color: $red;
+        }
+
+        >img {
+            height: 70px;
+        }
+    }
+
+    &__card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    &__card {
+        width: 20vw;
+        padding: 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4px);
+        border-radius: 12px;
+
+        >img {
+            width: 100%;
+        }
+    }
+
+    &__card-title {
+        color: $red;
+    }
+
+    &__card-btn {
+        margin-top: 18px;
+    }
+}

@@ -1,0 +1,47 @@
+.registrasi {
+    @include with-left-title();
+
+    &__form {
+        min-height: calc(100vh - 12rem);
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    &__form-input {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &--left,
+        &--right {
+            width: calc(50% - 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            gap: 1rem;
+        }
+    }
+
+    &__form-password {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+
+        >* {
+            width: calc(50% - .5rem);
+        }
+    }
+
+    &__form-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+}
